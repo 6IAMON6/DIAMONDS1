@@ -1,0 +1,110 @@
+<html><head>
+<meta charest="utf-8">
+<link href="styles.css" rel="stylesheet">
+</head><body onload="Data();">
+
+<style>
+body{
+background: #070c10;
+</style>
+<style>
+<title>Главная страница сайта</title></style>
+
+
+</a><header id="head"><a href="#" class="top1">
+
+</a><div id="zagolovok"><a href="#" class="top1">
+</a><a href="index.html" title="Вы на главной странице" rel="nofollow"><h2><font color="#FFFFFF">&emsp; DNS - <font color="#428bca">Фильтрация </font></font></h2></a><font color="#FFFFFF">
+
+
+
+<div class="scrollup">
+  <!-- Иконка fa-chevron-up (Font Awesome) -->
+  <i class="fa fa-chevron-up"></i>
+</div>
+
+
+
+</font><target="blank" rel="nofollow noopener" style="display:block;background-image: linear-gradient( 132deg, #0d141d 100%, #0d141d 100%);padding: 10px;color:white;border-radius: 0px;font-size: 16px;font-weight: bold;line-height: 15px;">
+<a href="index.html" rel="nofollow"><h2><font color="#FFFFFF"><font color="#428bca"> </font></font></h2></a><font color="#FFFFFF">
+<nav class="secondary-navigation">
+            <a href="Theory.html">Теория</a>
+			<span>|</span>
+			<a href="index123.html">Практикум</a>
+			<span>|</span>
+            <a href="index5.html">Контроль</a>
+			<span>|</span>
+            <a href="mode.html">Режимы</a>
+	   </nav>
+<br>
+
+
+
+
+
+</font></target="blank"></div><font color="#FFFFFF">
+</font></header><font color="#FFFFFF">
+<article id="conteiner"><!--открываем контейнер-->
+<article id="stranica"><!--открываем страницу-->
+
+
+
+<footer id="foot1">
+<div class="bootomLinks">
+<target="blank" rel="nofollow noopener" style="display:block;background-image: linear-gradient( 132deg, #23173a 100%, #e18b24 100%);;padding: 10px;color:white;border-radius: 10px;font-size: 16px;font-weight: bold;line-height: 30px;">
+<a id="aaa">Что такое DNS</a>
+</target="blank"></div>
+
+
+
+
+</footer>
+<div class="alert is-primary">
+<p>DNS (Domain Name System) - это система, которая преобразует доменные имена (например, google.com) в IP-адреса, по которым компьютеры могут общаться друг с другом в сети Интернет. DNS является фундаментальной технологией для работы Интернета, так как позволяет пользователям использовать удобные и запоминающиеся доменные имена вместо сложных числовых IP-адресов, которые используются компьютерами. DNS-серверы распространены по всему миру и обеспечивают быстрый и надежный доступ к ресурсам в Интернете.</p>
+<p>Когда вы набираете в адресной строке URL сайта (например, yandex.ru ), браузер отправляет запрос на специальный DNS-сервер. DNS-сервер находит соответствующий этому URL цифровой IP-адрес и отправляет его в ответ вашему браузеру. Чем быстрее работает сервер DNS, тем быстрее у вас откроется сайт.</p>
+
+<br><center><img src="https://yastatic.net/s3/doc-binary/freeze/CNy3qrB48P_IewLv-BRoKfqmLlg.svg"></center>
+<font color="#428bca"><h2>&emsp; Зачем нужно шифрование </h2></font>
+<p class="p">Обычный незашифрованный DNS-запрос можно сравнить с открыткой, отправленной по почте: любой, кто обрабатывает почту, может случайно увидеть текст, написанный на обратной стороне. А вдруг там конфиденциальная или личная информация?</p>
+<p class="p">При отправке незашифрованных запросов:</p>
+<li>Провайдер и администратор сети могут узнать, какие сайты вы посещаете.</li>
+<br>
+<li>Злоумышленник может подменить ответ DNS-сервера и перенаправить вас на вредоносную страницу. Например, вместо сайта банка вы можете оказаться на мошенническом ресурсе, который ворует пароли.</li>
+<p class="p">Поэтому все основные браузеры используют шифрование DNS-трафика. </p>
+
+<font color="#428bca"><h2>&emsp; Технологии DoT и DoH </h2></font>
+
+<p>DNS поверх TLS (DNS over TLS) или DoT</p> <p>&ensp; DoT использует тот же протокол безопасности (TLS), который веб-сайты HTTPS используют для шифрования и аутентификации связей. DoT добавляет шифрование TLS поверх протокола пользовательских дейтаграмм (UDP), который используется для DNS-запросов.</p> <p>DNS поверх HTTPS (DNS over HTTPS) или DoH</p> <p>&ensp; При использовании DoH запросы и ответы DNS зашифровываются, но при этом они отправляются через протоколы HTTP или HTTP/2, а не напрямую через UDP.</p> <p></p>
+<p class="p">Различие стандартов DoT и DoH состоит в том, какой порт они используют. DoT использует выделенный специально под него порт 853, а DoH использует порт 443, который также используется для всего остального трафика HTTPS.</p>
+<p class="p">Таким образом DoT дает сетевым администраторам возможность отслеживать и блокировать DNS-запросы, что важно для выявления и остановки вредоносного трафика. А DoH-запросы скрыты в обычном трафике HTTPS, что дает сетевым администраторам меньшую видимость, но обеспечивает пользователям большую конфиденциальность.</p>
+<footer id="foot2">
+<div class="bootomLinks">
+<target="blank" rel="nofollow noopener" style="display:block;background-image: linear-gradient( 132deg, #004173 100%, #004173 100%);padding: 10px;color:white;border-radius: 10px;font-size: 16px;font-weight: bold;line-height: 30px;">
+<a id="aaa">О Яндекс DNS</a>
+</target="blank"></div>
+<h1>Яндекс DNS — бесплатный DNS-сервис, который быстро открывает сайты и делает интернет безопасным: защищает вас и вашу семью от мошенников, вирусов и взрослого контента.</h1>
+</footer>
+
+
+<font color="#428bca"><h2>&emsp; Преимущества Яндекс DNS </h2></font>
+<p>Быстро загружает сайты</p> <p>&ensp; Ваши DNS-запросы будут направлены не на сервер DNS провайдера, а на сервер DNS Яндекса. У Яндекса больше 100 серверов DNS в России, поэтому скорость загрузки сайтов будет быстрой.</p> 
+<p>Фильтрует контент</p>
+<p>&ensp; Яндекс DNS покажет заглушку вместо опасного или мошеннического сайта, а ребенку заблокирует взрослый контент. Степень фильтрации зависит от выбранного вами </p>
+<p>Использует оба стандарта шифрования — DNS поверх TLS и DNS поверх HTTPS</p>
+<p>&ensp; Обе технологии шифруют запросы и ответы при передаче IP-адресов, так что злоумышленники не смогут отправить вас на мошеннический сайт, подделав DNS-трафик. А ваш провайдер не будет знать, какие сайты вы посещаете.</p>
+<h4>Работает на любых устройствах</h4>
+<p>&ensp; DNS можно  <a href="mode.html" class="sn-link">настроить</a> на телефонах и планшетах, подключенных к Wi-Fi, а также на компьютерах.</p>
+
+</div></article><!--закрываем страницу-->
+</article><!--закрываем контейнер-->
+<footer id="foot">
+<div class="bootomLinks">
+<target="blank" rel="nofollow noopener" style="display:block;background-image: linear-gradient( 135deg, #000000 10%, #1f4878 100%);padding: 10px;color:white;border-radius: 0px;font-size: 16px;font-weight: bold;line-height: 30px;">
+ 2023 DIAMOND
+</target="blank"></div>
+
+
+
+</footer>
+
+ </font></body></html>

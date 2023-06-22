@@ -1,0 +1,561 @@
+<html><head>
+<meta charest="utf-8">
+<link href="styles.css" rel="stylesheet">
+<style>
+body{
+background: #070c10;
+<title>Главная страница сайта</title></style>
+</head>
+<body onload="Data();">
+<header id="head">
+
+<div id="zagolovok">
+<target="blank" rel="nofollow noopener" style="display:block;background-image: linear-gradient( 132deg, #000000 100%, #e18b24 100%);padding: 10px;color:white;border-radius: 0px;font-size: 16px;font-weight: bold;line-height: 0px;">
+<a href="index.html" title="Вы на главной странице" rel="nofollow"><h2><font color="#FFFFFF">&emsp; DNS - <font color="#428bca">Фильтрация </font></font></h2></a><font color="#FFFFFF">
+
+
+
+<div class="scrollup">
+  <!-- Иконка fa-chevron-up (Font Awesome) -->
+  <i class="fa fa-chevron-up"></i>
+</div>
+
+
+
+</font></target="blank"><target="blank" rel="nofollow noopener" style="display:block;background-image: linear-gradient( 132deg, #0d141d 100%, #0d141d 100%);padding: 10px;color:white;border-radius: 0px;font-size: 16px;font-weight: bold;line-height: 15px;">
+<a href="index.html" rel="nofollow"><h2><font color="#FFFFFF"><font color="#428bca"> </font></font></h2></a><font color="#FFFFFF">
+<nav class="secondary-navigation">
+            <a href="Theory.html">Теория</a>
+			<span>|</span>
+			<a href="index123.html">Практикум</a>
+			<span>|</span>
+            <a id="aaa"href="index5.html" >Контроль</a>
+			<span>|</span>
+            <a href="mode.html">Режимы</a>
+	   </nav>
+<br/>
+
+
+
+
+
+</font></target="blank"></div><font color="#FFFFFF">
+</font></header><font color="#FFFFFF">
+<article id="conteiner"><!--открываем контейнер-->
+<article id="stranica"><!--открываем страницу-->
+<br/><center><font color="#428bca"><h2>Типы DNS фильтрации: blacklists, whitelists, greylists, их основные отличия и применение.</h2></font></center><br/>
+<p>Blacklists, whitelists и greylists - это типы DNS фильтрации, которые применяются для блокировки или разрешения доступа к определенным сайтам или ресурсам на основе их адресов.</p>
+Blacklists - это списки доменов или IP-адресов, которые заблокированы для доступа. Они используются для блокировки доступа к опасным сайтам, которые могут содержать вирусы, вредоносный код или попытки фишинга. Blacklists также могут содержать список ресурсов, содержащих нежелательный контент, такой как порнография, наркотики, азартные игры и т.д.
+<p>Whitelists - это списки доменов или IP-адресов, разрешенных для доступа. Они используются для разрешения доступа только к определенным сайтам или ресурсам, которые необходимы для работы организации или ее сотрудников. Whitelists могут содержать сайты с бизнес-партнерами, ресурсы, используемые в процессе работы, или даже список доменов, которые необходимы для доступа к социальным сетям, в целях маркетинга или рекламы.</p>
+<p>Greylists - это списки доменов или IP-адресов, которые подлежат дополнительной проверке перед предоставлением доступа. Они используются для блокировки доступа к ресурсам, которые могут быть небезопасными или нежелательными, однако общая политика безопасности не является достаточно жесткой, чтобы блокировать их автоматически. Это может помочь избежать ложных срабатываний, когда домен или IP-адрес не должны быть полностью заблокированы, но для проверки необходимы дополнительные данные.</p>
+<p>Применение этих типов фильтрации может значительно повысить безопасность организации или сети и обеспечить контроль над доступом к определенным ресурсам. Комбинация двух или более типов DNS-фильтрации может оказаться наиболее эффективным вариантом для достижения наилучших результатов.</p>
+<p></p>
+<br/>
+<br/><font color="#428bca"><h2>Проверка знаний.</h2></font><br/>
+<style type="text/css">
+
+.textfio {
+border: 1px solid #f00;
+width: 200px;
+border-radius: 3px;
+padding: 3px;
+margin: 10px;
+}
+
+.textlitera {
+border: 1px solid #f00;
+width: 200px;
+border-radius: 3px;
+padding: 2px;
+margin: 10px;
+color: #808080
+}
+
+.textreztest {
+width: 200px;
+}
+
+.paper {
+font-size: 14px;
+font-weight : bold;
+}
+
+.Lseerez {
+font-size: 16px;
+font-family: Arial;
+}
+
+.seerez {
+font-size: 16px;
+font-family: Arial;
+font-weight : bold;
+}
+
+.err {
+font-size: 16px;
+font-family: Arial;
+color: #f00;
+font-weight : bold;
+}
+
+.titlespan {
+font-size: 16px;
+color: #000000;
+}
+
+.titlemspan {
+font-size: 12px;
+color: #424242;
+}
+
+.onetest {
+font-family: Arial;
+border: solid 2px #ffffff;
+padding: 5px;
+border-radius: 5px;
+color: #ffffff;
+font-size: 17px;
+}
+
+.titledive {
+font-family: Arial;
+padding: 5px;
+color: #000099;
+font-size: 17px;
+text-align: center;
+}
+
+.button {
+background-color: #022253;
+border: none;
+color: white;
+text-align: center;
+font-size: 14px;
+width: 250px;
+height: 32px;
+}
+.button:hover {
+background: #01327D;
+}
+
+.seerezult {
+text-align: center;
+}
+
+.seerezultbut{
+text-align: center;
+}
+
+.QTestTrueFalse {
+margin-left: 10%;
+color: #029000;
+}
+
+.aspan {
+font-size: 14px;
+}
+
+.divbody{
+width: 740px;
+right: 0;
+bottom: 0;
+margin: auto;
+}
+
+.arrow {
+margin-left: -5px;
+margin-right: 5px;
+}
+.arrow::before {
+content: "→";
+position:  relative;
+top: -10px;
+left: 16px;
+}
+
+
+
+
+
+</style>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+
+
+<body>
+<div style="display: none;">
+6
+-14,-28,-42,-49,-42,-56
+<img src="/tmp/sendreztest/load6060.jpg" alt="7" style="vertical-align:middle">
+</div>
+
+
+
+
+<form name="form" id="form">
+
+<div style="display: none;">
+<input type="checkbox" id="chbfio"> <span>Отправка результатов</span><br>
+</div>
+
+
+
+
+<div class="divfio" id="fio" style="display: none;">
+<input type="text" class="textfio" name="textfam" oninput = "clearNotFamorName()" id="textfam" placeholder="Введите Вашу фамилию">
+<input type="text" class="textfio" name="textname" oninput = "clearNotFamorName()" id="textname" placeholder="Введите Ваше имя">
+<div style="display: none;">
+<select name="classlitera" class="textlitera" id = "classlitera" onchange = "clearNotFamorName()">
+<option value = "Выберите класс" selected>Выберите класс</option>
+
+
+
+
+
+</select>
+</div>
+</div>
+
+<div class="divfio" id="textar" style="display: none;">
+<textarea class="textreztest" name="textreztest" id="textreztest" ></textarea>
+<input type="text" name="textobject" value = "A|B|C">
+<input type="text" name="textdiscipline" value = "">
+<input type="text" name="textclass" id="textclass" value = "Выберите класс">
+<input type="text" name="texttopic" value = "">
+<input type="text" name="textcountq" value =6>
+<input type="text" name="textcounttrue" id="textcounttrue" value = 0>
+<input type="text" name="textestimation" id="textestimation" value = 0>
+<input type="text" name="texttrueorfalse" id="texttrueorfalse" value = "">
+</div><br>
+
+
+
+
+
+
+
+
+
+
+<div class="onetest" name="onetest">
+<span class = "QTest">Вопрос №1</span> <span class = "QTestTrueFalse" id = "QTest1"> </span><br>
+<p><span class ="paper">Распределенная база данных, которая содержит информацию о компьютерах, включенных в сеть Internet:</span></p>
+<input type="radio" name = "Q1" id = "Q11" onclick="getchecked(1,1)"><span name="aspan" class="aspan">доменная система имен (DNS)</span><br>
+<input type="radio" name = "Q1" id = "Q12" onclick="getchecked(1,2)"><span name="aspan" class="aspan">доменная система названий</span><br>
+<input type="radio" name = "Q1" id = "Q13" onclick="getchecked(1,3)"><span name="aspan" class="aspan">доменная система чисел</span><br>
+
+</div><br>
+
+
+<div class="onetest" name="onetest">
+<span class = "QTest">Вопрос №2</span> <span class = "QTestTrueFalse" id = "QTest2"> </span><br>
+<p><span class ="paper">Совокупность подключенных к сети компьютеров, принадлежащих какому-либо лицу или организации и имеющая уникальное зарегистрированное имя:</span></p>
+<input type="radio" name = "Q2" id = "Q21" onclick="getchecked(2,1)"><span name="aspan" class="aspan">никнейм</span><br>
+<input type="radio" name = "Q2" id = "Q22" onclick="getchecked(2,2)"><span name="aspan" class="aspan">домен</span><br>
+<input type="radio" name = "Q2" id = "Q23" onclick="getchecked(2,3)"><span name="aspan" class="aspan">обозначитель</span><br>
+
+</div><br>
+
+
+<div class="onetest" name="onetest">
+<span class = "QTest">Вопрос №3</span> <span class = "QTestTrueFalse" id = "QTest3"> </span><br>
+<p><span class ="paper">Иерархическая распределенная система, включающая миллионы баз данных, содержащих информацию о доменах:</span></p>
+<input type="radio" name = "Q3" id = "Q31" onclick="getchecked(3,1)"><span name="aspan" class="aspan">NSD</span><br>
+<input type="radio" name = "Q3" id = "Q32" onclick="getchecked(3,2)"><span name="aspan" class="aspan">SND</span><br>
+<input type="radio" name = "Q3" id = "Q33" onclick="getchecked(3,3)"><span name="aspan" class="aspan">DNS</span><br>
+
+</div><br>
+
+
+<div class="onetest" name="onetest">
+<span class = "QTest">Вопрос №4</span> <span class = "QTestTrueFalse" id = "QTest4"> </span><br>
+<p><span class ="paper">Один из примеров корневой зоны, содержащей информацию о своих базовых поддоменах:</span></p>
+<input type="radio" name = "Q4" id = "Q41" onclick="getchecked(4,1)"><span name="aspan" class="aspan">yandex</span><br>
+<input type="radio" name = "Q4" id = "Q42" onclick="getchecked(4,2)"><span name="aspan" class="aspan">google</span><br>
+<input type="radio" name = "Q4" id = "Q43" onclick="getchecked(4,3)"><span name="aspan" class="aspan">org</span><br>
+
+</div><br>
+
+
+<div class="onetest" name="onetest">
+<span class = "QTest">Вопрос №5</span> <span class = "QTestTrueFalse" id = "QTest5"> </span><br>
+<p><span class ="paper">Верхние домены бывают:</span></p>
+<input type="radio" name = "Q5" id = "Q51" onclick="getchecked(5,1)"><span name="aspan" class="aspan">административные</span><br>
+<input type="radio" name = "Q5" id = "Q52" onclick="getchecked(5,2)"><span name="aspan" class="aspan">основные</span><br>
+<input type="radio" name = "Q5" id = "Q53" onclick="getchecked(5,3)"><span name="aspan" class="aspan">главные</span><br>
+
+</div><br>
+
+
+<div class="onetest" name="onetest">
+<span class = "QTest">Вопрос №6</span> <span class = "QTestTrueFalse" id = "QTest6"> </span><br>
+<p><span class ="paper">Сервис DNS предназначен для:</span></p>
+<input type="radio" name = "Q6" id = "Q61" onclick="getchecked(6,1)"><span name="aspan" class="aspan">преобразования IP-дресов в МАС-адреса</span><br>
+<input type="radio" name = "Q6" id = "Q62" onclick="getchecked(6,2)"><span name="aspan" class="aspan">преобразования IP-адресов в доменные имена</span><br>
+<input type="radio" name = "Q6" id = "Q63" onclick="getchecked(6,3)"><span name="aspan" class="aspan">в DMZ</span><br>
+
+</div><br>
+
+
+<script>
+let CountVopr = 6;
+let CountTrueOtv = 0;
+let CountTrueOtvProc = 0;
+let estimation = 0;
+let otvet = [2,2,2,3,2,2];
+let rezalts = [-1,-1,-1,-1,-1,-1];
+let VarQ1 = [1,1,1,1,1,1];
+let VarQ2 = [1,1,1,1,1,1];
+let VarQ3 = [1,1,1,1,1,1];
+let VarQ4 = [0,0,0,0,0,0];
+let trueorfalse = "";
+let flagVseOtvety = 0;
+let flagSendMail = 0;
+let ratioEstimated = [-14,-28,-42,-49,-42,-56];
+for (let i = 0; i < CountVopr; i++) {
+if  (VarQ1[i] == 1) {document.getElementById("Q" + String(i+1) + "1").checked = false;}
+if  (VarQ2[i] == 1) {document.getElementById("Q" + String(i+1) + "2").checked = false;}
+if  (VarQ3[i] == 1) {document.getElementById("Q" + String(i+1) + "3").checked = false;}
+if  (VarQ4[i] == 1) {document.getElementById("Q" + String(i+1) + "4").checked = false;}
+}
+
+document.getElementById("chbfio").checked = false;
+document.getElementById("textname").value = "";
+document.getElementById("textfam").value = "";
+document.getElementById("classlitera").selectedIndex = 0;
+
+function getchecked(novopr, nootvet) {
+document.getElementById("err").innerHTML = "";
+if (ratioEstimated[novopr-1]/(CountVopr-13)-novopr != nootvet) {
+rezalts[novopr-1] = 0;
+}
+if (ratioEstimated[novopr-1]/(CountVopr-13)-novopr == nootvet) {
+rezalts[novopr-1] = 1;
+}
+}
+
+function seerez() {
+
+flagVseOtvety = 1;
+for (let i = 0; i < CountVopr; i++) {
+if (rezalts[i] == -1){
+		flagVseOtvety = 0;
+}	
+}
+
+if (flagSendMail  == 1) {
+document.getElementById("textclass").value = document.getElementById("classlitera").value;
+if (document.getElementById("textfam").value == ""){
+$('#divNotFamorName').show(100);
+flagVseOtvety = 2;
+}
+if (document.getElementById("textname").value == ""){
+$('#divNotFamorName').show(100);
+flagVseOtvety = 2;
+}
+if (document.getElementById("classlitera").value == "Выберите класс"){
+$('#divNotFamorName').show(100);
+flagVseOtvety = 2;
+}
+}
+
+if (flagVseOtvety == 1){
+
+StrRezalt = "";
+CountTrueOtv = 0;
+for (let i = 0; i < CountVopr; i++) {
+if (rezalts[i] == 1) {
+CountTrueOtv = CountTrueOtv + 1;
+document.getElementById("QTest" + String(i + 1)).innerHTML = "ПРАВИЛЬНО";
+document.getElementById("QTest" + String(i + 1)).style.color = "#029000";
+trueorfalse = trueorfalse + "+";
+}
+
+if (rezalts[i] != 1) {
+document.getElementById("QTest" + String(i + 1)).innerHTML = "НЕПРАВИЛЬНО";
+document.getElementById("QTest" + String(i + 1)).style.color = "#f00";
+trueorfalse = trueorfalse + "-";
+}
+}
+
+if (CountTrueOtv/CountVopr >= 0.91) {
+estimation = 5;
+}
+if (CountTrueOtv/CountVopr >= 0.75 && CountTrueOtv/CountVopr < 0.91) {
+estimation = 4;
+}
+if (CountTrueOtv/CountVopr >= 0.5 && CountTrueOtv/CountVopr < 0.75) {
+estimation = 3;
+}
+if (CountTrueOtv/CountVopr < 0.50) {
+estimation = 2;
+}
+document.getElementById("CountQ").innerHTML = String(CountVopr);
+document.getElementById("CountTrueQ").innerHTML = String(CountTrueOtv);
+document.getElementById("Estim").innerHTML = String(estimation);
+document.getElementById("LCountQ").innerHTML = "Всего вопросов: ";
+document.getElementById("LCountTrueQ").innerHTML = "Правильных ответов: ";
+document.getElementById("LEstim").innerHTML = "Ваша оценка: ";
+document.getElementById("seerezbut").disabled = true;
+document.getElementById("seerezbut").style.background = "#b0b0b0";
+document.getElementById("texttrueorfalse").value = trueorfalse;
+
+//Заполнение TextArea и Результатов
+document.getElementById("textestimation").value = estimation;
+document.getElementById("textcounttrue").value = CountTrueOtv;
+document.getElementById("textreztest").value = "Результаты: \r\n";
+document.getElementById("textreztest").value += "Всего вопросов: " + String(CountVopr)+"\r\n";
+document.getElementById("textreztest").value += "Правильных ответов: " + String(CountTrueOtv)+"\r\n";
+document.getElementById("textreztest").value += "Оценка: " + String(estimation)+"\r\n";
+document.getElementById("textreztest").value += "\r\n";
+
+for (let i = 0; i < CountVopr; i++) {
+if (rezalts[i] == 1) {
+document.getElementById("textreztest").value += String(i+1)+" вопрос - ДА"+"\r\n";
+}
+if (rezalts[i] != 1) {
+document.getElementById("textreztest").value += String(i+1)+" вопрос - НЕТ"+"\r\n";
+}
+}
+
+//Отправка результатов
+if (flagSendMail  == 1) {
+document.getElementById("SendRez").innerHTML = "Результаты выполнения теста отправлены!";
+$.ajax({
+type: "POST",
+url: "/tmp/sendreztest/ToExcel2.php",
+data: $('#form').serialize()
+})
+}
+
+for (let i = 0; i < CountVopr; i++) {
+if  (VarQ1[i] == 1) {document.getElementById("Q" + String(i+1) + "1").disabled = true;}
+if  (VarQ2[i] == 1) {document.getElementById("Q" + String(i+1) + "2").disabled = true;}
+if  (VarQ3[i] == 1) {document.getElementById("Q" + String(i+1) + "3").disabled = true;}
+if  (VarQ4[i] == 1) {document.getElementById("Q" + String(i+1) + "4").disabled = true;}
+}
+document.getElementById("chbfio").disabled = true;
+document.getElementById("textfam").disabled = true;
+document.getElementById("textname").disabled = true;
+document.getElementById("classlitera").disabled = true;
+}
+if (flagVseOtvety == 0){
+document.getElementById("err").innerHTML = "Вы ответили не на все вопросы. Проверьте себя!";
+}
+}
+
+$('#chbfio').click(function(){
+if ($(this).is(':checked')){
+$('#fio').show(100);
+flagSendMail  = 1;     
+document.getElementById("seerezbut").value = "Посмотреть и отправить результат";
+} else {
+$('#fio').hide(100);
+flagSendMail  = 0;
+clearNotFamorName()
+document.getElementById("seerezbut").value = "Посмотреть результат";
+}
+}); 
+
+function clearNotFamorName() {
+if (document.getElementById("textfam").value != ""){
+document.getElementById("textfam").style.border = "1px solid #000066";
+}
+if (document.getElementById("textname").value != ""){
+document.getElementById("textname").style.border = "1px solid #000066";
+}
+if (document.getElementById("textfam").value == ""){
+document.getElementById("textfam").style.border = "1px solid #f00";
+}
+if (document.getElementById("textname").value == ""){
+document.getElementById("textname").style.border = "1px solid #f00";
+}
+if (document.getElementById("classlitera").value == "Выберите класс") {
+document.getElementById("classlitera").style.color = "#808080";
+document.getElementById("classlitera").style.border = "1px solid #f00";
+}
+if (document.getElementById("classlitera").value != "Выберите класс") {
+document.getElementById("classlitera").style.color = "#000000";
+document.getElementById("classlitera").style.border = "1px solid #000066";
+}
+$('#divNotFamorName').hide(100);
+}
+
+</script>
+
+<div class="seerezultbut" id = "seerezultbut">
+<input type="button" class = "button" name="simb" id = "seerezbut" onclick="seerez()" value="Посмотреть результат">
+</div>
+
+<div class="seerezult" id = "divNotFamorName" style="display: none;">
+<span class = "err">Вы указали не все данные о себе!</span>
+</div>
+
+<div class="seerezult">
+<p class = "err" id = "err"></p>
+<span class = "Lseerez" id = "LCountQ"></span><span class = "seerez" id = "CountQ"></span><br>
+<span class = "Lseerez" id = "LCountTrueQ"></span><span class = "seerez" id = "CountTrueQ"></span><br>
+<span class = "Lseerez" id = "LEstim"></span><span class = "seerez" id = "Estim"></span><br><br>
+<span class = "seerez" id = "SendRez"></span>
+</div>
+
+</form>
+</div>
+<div name = "divsaveTest" id = "divsaveTest" style="display: none;">
+
+document.getElementById("textsubject").value = "";
+document.getElementById("texttheme").value = "";
+document.getElementById("textclass").value = "Выберите класс";
+document.getElementById("textcountClass").value = "1";
+
+document.getElementById("textQ1").value = "Распределенная база данных, которая содержит информацию о компьютерах, включенных в сеть Internet:";
+document.getElementById("textA11").value = "доменная система имен (DNS)";
+document.getElementById("textA12").value = "доменная система названий";
+document.getElementById("textA13").value = "доменная система чисел";
+document.getElementById("textA14").value = "";
+document.getElementById("textQ2").value = "Совокупность подключенных к сети компьютеров, принадлежащих какому-либо лицу или организации и имеющая уникальное зарегистрированное имя:";
+document.getElementById("textA21").value = "никнейм";
+document.getElementById("textA22").value = "домен";
+document.getElementById("textA23").value = "обозначитель";
+document.getElementById("textA24").value = "";
+document.getElementById("textQ3").value = "Иерархическая распределенная система, включающая миллионы баз данных, содержащих информацию о доменах:";
+document.getElementById("textA31").value = "NSD";
+document.getElementById("textA32").value = "SND";
+document.getElementById("textA33").value = "DNS";
+document.getElementById("textA34").value = "";
+document.getElementById("textQ4").value = "Один из примеров корневой зоны, содержащей информацию о своих базовых поддоменах:";
+document.getElementById("textA41").value = "yandex";
+document.getElementById("textA42").value = "google";
+document.getElementById("textA43").value = "org";
+document.getElementById("textA44").value = "";
+document.getElementById("textQ5").value = "Верхние домены бывают:";
+document.getElementById("textA51").value = "административные";
+document.getElementById("textA52").value = "основные";
+document.getElementById("textA53").value = "главные";
+document.getElementById("textA54").value = "";
+document.getElementById("textQ6").value = "Сервис DNS предназначен для:";
+document.getElementById("textA61").value = "преобразования IP-дресов в МАС-адреса";
+document.getElementById("textA62").value = "преобразования IP-адресов в доменные имена";
+document.getElementById("textA63").value = "в DMZ";
+document.getElementById("textA64").value = "";
+</div>
+
+
+
+
+
+
+
+</div></article><!--закрываем страницу-->
+</article><!--закрываем контейнер-->
+<footer id="foot">
+<div class="bootomLinks">
+<target="blank" rel="nofollow noopener" style="display:block;background-image: linear-gradient( 135deg, #000000 10%, #1f4878 100%);padding: 10px;color:white;border-radius: 0px;font-size: 16px;font-weight: bold;line-height: 30px;">
+© 2023 DIAMOND
+</target="blank"></div>
+
+
+
+</footer>
+
+ </font></body></html>
